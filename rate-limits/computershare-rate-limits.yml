@@ -1,0 +1,8 @@
+generated: '2026-10-21'
+method: none
+name: Computershare rate limits
+limit_count: 0
+note: >-
+  No rate limits are documented. Computershare publishes no API reference or developer docs; the only
+  API page (https://www.computershare.com/us/business/employee-share-plans/equateapi) is marketing copy.
+limits: []

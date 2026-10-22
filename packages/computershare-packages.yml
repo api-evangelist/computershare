@@ -1,0 +1,20 @@
+generated: '2026-10-21'
+method: none
+name: Computershare packages
+note: >-
+  Checked 2026-10-21; no first-party client library, SDK or CLI found. Computershare publishes no
+  developer portal; EquateAPI is described only on a marketing page with no SDK. Registry searches for
+  "computershare" returned zero results (npm total 0, PyPI 404, RubyGems [], NuGet totalHits 0,
+  crates.io total 0, Packagist total 0, Maven Central returned no artifacts). The GitHub org
+  github.com/computershare holds one repo, computershare/powershell (PowerShell scripts/DSC modules,
+  last pushed 2016-06-18), which is not an API client.
+checked:
+- https://registry.npmjs.org/-/v1/search?text=computershare
+- https://pypi.org/pypi/computershare/json
+- https://rubygems.org/api/v1/search.json?query=computershare
+- https://azuresearch-usnc.nuget.org/query?q=computershare
+- https://search.maven.org/solrsearch/select?q=computershare
+- https://crates.io/api/v1/crates?q=computershare
+- https://packagist.org/search.json?q=computershare
+- https://api.github.com/orgs/computershare/repos
+packages: []

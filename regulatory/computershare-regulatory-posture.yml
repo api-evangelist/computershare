@@ -1,0 +1,79 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://www.computershare.com/us/privacy
+signals:
+  data_subject_request:
+    url: https://www.computershare.com/us/privacy
+    section: Accessing and Updating Your Information
+    channel: USCSPrivacy@computershare.com
+    rights_named: [access (copy), correction, deletion, restriction, objection (EU/EEA/UK), portability (EU/EEA/UK), complaint to data protection authority (EU/EEA/UK), withdrawal of consent (EU/EEA/UK), opt-out of sale (US state laws)]
+    evidence:
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You may request a copy of the information that we hold about you by contacting us at the address below. There may be a small charge for this service unless prohibited by law."
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "These may include, depending on the circumstance, the right to access your personal information; rectify the personal information we hold about you; erase your personal information; restrict our use of your personal information; object to our use of your personal information; receive your personal information in a usable electronic format and transmit it to a third party (also known as the right of data portability); lodge a complaint with your local data protection authority; and withdraw any consent you have given to the uses of your personal information."
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "For our clients that meet the definition of a business or data controller under these relevant state privacy regulations, Computershare will assist those clients, to the extent possible, with the fulfillment of their obligations to respond to your requests."
+    note: >-
+      The US Privacy Statement offers a direct copy-of-data request (possibly for a small charge) and lists
+      EU/EEA/UK and US-state rights, but frames Computershare mostly as a service provider that assists its
+      data-controller clients with requests. No response time is stated.
+  subprocessors:
+    url: https://www.computershare.com/us/privacy
+    section: Collection and Use of Biometric Data
+    evidence:
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "In such cases, to verify your identity, Computershare as a service provider to its client, engages a subprocessor, Trulioo, to collect, generate, analyze, extract, and store facial scans and measurements from ID photos and selfie images you provide (“facial scans”) in order to compare them to determine if they match."
+    note: >-
+      Names one subprocessor (Trulioo, for identity verification) and mentions Google Analytics. This is not
+      a full subprocessor list; other service providers and group entities are only described in general terms.
+  data_residency:
+    url: https://www.computershare.com/us/privacy
+    evidence:
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "Your personal information is processed and stored in the United States and may be transferred to, processed and stored in countries outside the United States by Computershare's service providers, all in accordance with this Privacy Statement."
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "As Computershare forms part of a global group of companies, we may also disclose your personal information to overseas entities within the Computershare Group who assist us in supplying our services including through data storage solutions, back-up services and IT support."
+    note: >-
+      Data is stored in the US by default, but the statement allows transfer to other countries. It makes no
+      commitment to keep data in one region.
+  data_retention:
+    url: https://www.computershare.com/us/privacy
+    section: Collection and Use of Biometric Data
+    evidence:
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "Trulioo retains and automatically deletes facial scans within 24 hours of using them to verify your identity."
+    - source: https://www.computershare.com/us/privacy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "Computershare receives a copy of your ID and selfie image as part of the online identity verification process and shall retain such documents as required by applicable law, which is currently for 6 years."
+    note: >-
+      Gives retention periods only for identity-verification data: 24 hours for facial scans at the
+      subprocessor and 6 years for ID and selfie copies. No general retention schedule is published.
+  accessibility_conformance:
+    url: https://www.computershare.com/us/accessibility
+    section: Meeting global accessibility standards
+    target: WCAG level AA (aspirational)
+    evidence:
+    - source: https://www.computershare.com/us/accessibility
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "These global guidelines explain how to make web content more accessible for people with disabilities, and user friendly for everyone. The guidelines have three levels of accessibility (A, AA and AAA), and the Computershare site aims to meet AA standards."
+    note: >-
+      The site says it aims to meet WCAG AA. It does not claim conformance or name a WCAG version, and it
+      admits that some MFA methods are hard to use while alternatives are being reviewed.

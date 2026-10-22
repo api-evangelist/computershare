@@ -1,0 +1,21 @@
+generated: '2026-10-21'
+method: none
+status: none
+note: >-
+  Checked, nothing there. No official hosted or local MCP server from Computershare was found:
+  a web search for a Computershare MCP server returned no provider result, the pre-flight
+  contract discovery recorded mcp: absent on computershare.com, www.computershare.com,
+  api.computershare.com and the sibling hosts it probed, and no MCP tool table is documented.
+  No candidate tool list was derived because Computershare publishes no OpenAPI or other
+  machine-readable contract (EquateAPI is described only in marketing prose and is limited to
+  EquatePlus clients).
+checked:
+- what: web search "Computershare MCP server Model Context Protocol"
+  result: no Computershare result
+- what: pre-flight contract_discovery (2026-10-21)
+  result: 'mcp: absent, openapi: absent'
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

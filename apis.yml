@@ -1,23 +1,104 @@
 aid: computershare
+
 name: Computershare
-description: 'Computershare is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Computershare is a global financial administration company providing transfer agency and share registry services, employee equity
+  plans (EquatePlus), proxy solicitation (Georgeson), entity compliance (GEMS), corporate trust, stakeholder communications and other diversified
+  financial and governance services. Its public web presence documents EquateAPI, a partner API exposed by EquatePlus that supports real-time
+  loads of participant data from HR systems as an alternative to SFTP file exchange; no public developer portal or API reference was found.
+
 url: https://raw.githubusercontent.com/api-evangelist/computershare/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Financial Services
+- Transfer Agent
+- Share Registry
+- Employee Equity Plans
+- Proxy Solicitation
+- Corporate Trust
+- Governance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.computershare.com/img/new-img/og-image-cpu.jpg
+
 common:
+- type: Hosts
+  url: hosts/computershare-hosts.yml
 - type: Website
-  url: https://computershare.com/
+  url: https://www.computershare.com/
+- type: DomainSecurity
+  url: security/computershare-domain-security.yml
+- type: APIOverview
+  name: EquateAPI
+  url: https://www.computershare.com/us/business/employee-share-plans/equateapi
+- type: About
+  url: https://www.computershare.com/corporate/about-us/our-company
+- type: Support
+  url: https://www.computershare.com/us/contact-us
+- type: Newsroom
+  url: https://www.computershare.com/us/news
+- type: PrivacyPolicy
+  url: https://www.computershare.com/us/privacy
+- type: TermsOfService
+  url: https://www.computershare.com/ca/en/governance/terms-and-conditions
+- type: Login
+  url: https://www-us.computershare.com/AdvisorPortal/Login
+- type: Careers
+  url: http://careers.computershare.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/computershare
+- type: X
+  url: https://x.com/computershare
+- type: YouTube
+  url: https://www.youtube.com/user/COMPUTERSHARE
+
+apis:
+- name: Computershare EquateAPI
+  description: EquateAPI is a partner API exposed by EquatePlus, Computershare's employee share plan platform, that supports real-time data loads
+    of participant information from a company's HR platform with instant status notification, as an alternative to SFTP file-based data exchange.
+    No public API reference, base URL or machine-readable contract is published; access is available to EquatePlus clients.
+  humanURL: https://www.computershare.com/us/business/employee-share-plans/equateapi
+  tags:
+  - Employee Share Plans
+  - HR Integration
+  - Participant Data
+  properties:
+  - type: Documentation
+    url: https://www.computershare.com/us/business/employee-share-plans/equateapi
+  aid: computershare:computershare-equateapi
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website www.computershare.com (title "Welcome to Computershare") verified; EquateAPI partner API page found; no public developer portal,
+    API reference, GitHub org or Postman found.
+  evidence:
+  - url: https://www.computershare.com/
+    status: 200
+  - url: https://www.computershare.com/us/business/employee-share-plans/equateapi
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

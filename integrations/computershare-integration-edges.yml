@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/computershare/integrations
+- https://n8n.io/integrations/computershare/
+- https://composio.dev/toolkits/computershare
+- https://monid.ai/tools/computershare
+checked:
+- https://zapier.com/apps/computershare/integrations
+- https://www.make.com/en/integrations/computershare
+- https://n8n.io/integrations/computershare/
+- https://www.workato.com/integrations/computershare
+- https://www.computershare.com/us/business/employee-share-plans/equateapi
+- https://composio.dev/toolkits/computershare
+- https://monid.ai/tools/computershare
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No marketplace listing, integrations/partners page naming partners, or contract was found. The EquateAPI page
+  says it lets "your HR platform" exchange data with EquatePlus but names no specific HR platform, so no edge is
+  recorded.
